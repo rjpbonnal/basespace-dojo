@@ -3,6 +3,10 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+Run the web sever with 
+
+    BASESPACE_CREDENTIALS=path_to_your_json_credentials_file rails s
+
 Things you may want to cover:
 
 * Ruby version
