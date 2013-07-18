@@ -3,9 +3,26 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Run the web sever with 
+
+In order to make this experimental Illumina BaseSpace's application to run you need to follow these steps:
+
+Train a Ninja to sneak into the Dojo
+
+    git clone https://github.com/helios/basespace-ninja
+    cd basespace-ninja
+    bundle install
+    rake gemspec
+
+Setup the Dojo with the hidden Ninja inside
+
+    git clone https://github.com/helios/basespace-dojo
+    cd basespace-dojo
+    bundle install
+
+Open the Dojo to the public
 
     BASESPACE_CREDENTIALS=path_to_your_json_credentials_file rails s
+
 
 Things you may want to cover:
 
