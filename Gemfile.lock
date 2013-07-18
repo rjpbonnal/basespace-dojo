@@ -1,5 +1,5 @@
 PATH
-  remote: /Users/bonnalraoul/Documents/Projects/Codefest13/bioruby-fake
+  remote: ../basespace-ninja
   specs:
     bio-fake (0.0.0)
       builder

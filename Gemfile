@@ -34,7 +34,7 @@ end
 
 
 gem 'bio-basespace'
-gem 'bio-fake', :path => '../bioruby-fake'
+gem 'bio-fake', :path => '../basespace-ninja'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
