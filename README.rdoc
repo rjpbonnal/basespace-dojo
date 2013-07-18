@@ -19,6 +19,22 @@ Setup the Dojo with the hidden Ninja inside
     cd basespace-dojo
     bundle install
 
+Use the Ninja' secrets for accessing BaseSapce, create a file name
+
+    credentials.json
+
+with your credentialns 
+    
+    {
+      "client_id":      "",
+      "client_secret":  "",
+      "app_session_id": "",
+      "access_token":   "",
+      "basespace_url":  "https://api.basespace.illumina.com/",
+      "api_version":    "v1pre3"
+    }
+
+
 Open the Dojo to the public
 
     BASESPACE_CREDENTIALS=path_to_your_json_credentials_file rails s
