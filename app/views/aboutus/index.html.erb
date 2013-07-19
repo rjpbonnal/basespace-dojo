@@ -1,19 +1,6 @@
       <div class="container">
   <div class="row">
-    <div class="span5">
-<table class="table table-striped table-condensed" >
-<tr>
-<th></th>
-<th>Name</th>
-</tr>
-<% @gitusers.each do |user| %>
-<tr>
-<td><%= image_tag user['avatar_url'], size: "80x80" %></td>
-<td><%= user["name"] || user["login"] %></td>
-</tr>
-<% end %> 
-</table>
-    </div>
+
     <div class="span7">
 <p>Ruby/Biogem developers can create your own app
 - You can easily utilize your NGS biogem w/ BaseSpace Ruby SDK
@@ -35,6 +22,20 @@ Note: It will be necessary to have created a BaseSpace account with a new App an
 
 
     </div>
+    <div class="span5">
+<table class="table table-striped table-condensed" >
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+<% @gitusers.each do |user| %>
+<tr>
+<td><%= image_tag user['avatar_url'], size: "80x80" %></td>
+<td><%= user["name"] || user["login"] %></td>
+</tr>
+<% end %> 
+</table>
+    </div>    
   </div>
 </div>
 
