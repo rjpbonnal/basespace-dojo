@@ -36,6 +36,17 @@ end
 gem 'bio-basespace'
 gem 'bio-fake', :path => '../basespace-ninja'
 
+
+group :assets do
+  gem 'twitter-bootstrap-rails'
+end
+
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
+
+
+gem "octokit"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

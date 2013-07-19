@@ -1,0 +1,19 @@
+      <h2>About Us</h2>
+      <p>Bio::BaseSpace is a Ruby based SDK to be used in the development of Apps and scripts for working with Illumina's BaseSpace cloud-computing solution for next-gen sequencing data analysis.
+
+The primary purpose of the SDK is to provide an easy-to-use Ruby environment enabling developers to authenticate a user, retrieve data, and upload data/results from their own analysis to BaseSpace.
+
+Note: It will be necessary to have created a BaseSpace account with a new App and have the client_key and client_secret codes for the App available to run a number of the following examples.</p>        
+
+<table class="table table-striped table-condensed table-hover" >
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+<% @gitusers.each do |user| %>
+<tr>
+<td><%= image_tag user["avatar_url"], size: "80x80" %></td>
+<td><%= user["name"] || user["login"] %></td>
+</tr>
+<% end %> 
+</table>
