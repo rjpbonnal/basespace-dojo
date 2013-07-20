@@ -3,8 +3,20 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-
 In order to make this experimental Illumina BaseSpace's application to run you need to follow these steps:
+
+=== Ruby Setup
+
+Ruby and Rails can be conveniently installed via the Ruby Version Manager (RVM):
+
+    \curl https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer | bash -s stable --rails
+
+On Mac OS X, Ruby comes preinstalled. However, for the development installation using RVM, it is
+necessary to install [MacPorts](http://www.macports.org/install.php) and then execute `sudo port install curl`.
+
+*Note:* On both Linux and Mac OS X it is necessary to have superuser ("sudo") permissions.
+
+=== Ninja & Dojo
 
 Train a Ninja to sneak into the Dojo
 
@@ -18,6 +30,8 @@ Setup the Dojo with the hidden Ninja inside
     git clone https://github.com/helios/basespace-dojo
     cd basespace-dojo
     bundle install
+
+=== Entering BaseSpace
 
 Use the Ninja' secrets for accessing BaseSapce, create a file name
 
@@ -34,11 +48,11 @@ with your credentialns
       "api_version":    "v1pre3"
     }
 
-
 Open the Dojo to the public
 
     BASESPACE_CREDENTIALS=path_to_your_json_credentials_file rails s
 
+== Further Work
 
 Things you may want to cover:
 
@@ -60,6 +74,18 @@ Things you may want to cover:
 
 * ...
 
-
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+== Troubleshooting
+
+BaseSpace Ruby SDK is not deployed as a gem yet. The development version can be installed
+using bundler like Dojo and Ninja above, but that does not work on all systems. The sure-fire
+way of instally BaseSpace Ruby SDK is:
+
+    git clone https://github.com/joejimbo/basespace-ruby-sdk.git
+    cd basespace-ruby-sdk
+    rake gemspec
+    gem build bio-basespace-sdk.gemspec
+    gem install bio-basespace-sdk-0.1.2.gem
+

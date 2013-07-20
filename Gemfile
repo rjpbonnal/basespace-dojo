@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'getopt', '~> 1.4.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -32,8 +34,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# BaseSpace Ruby SDK
+gem 'bio-basespace-sdk'
 
-gem 'bio-basespace'
+# Previously set-up BaseSpace Ninja
 gem 'bio-fake', :path => '../basespace-ninja'
 
 
