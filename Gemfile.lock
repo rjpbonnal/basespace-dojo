@@ -35,7 +35,7 @@ GEM
     addressable (2.3.5)
     arel (4.0.0)
     atomic (1.1.10)
-    bio-basespace (0.1.2)
+    bio-basespace-sdk (0.1.2)
       addressable (>= 2.3.2)
       getopt (>= 1.4.1)
     builder (3.1.4)
@@ -155,9 +155,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bio-basespace
+  bio-basespace-sdk
   bio-fake!
   coffee-rails (~> 4.0.0)
+  getopt (~> 1.4.1)
   gon
   jbuilder (~> 1.2)
   jquery-rails
